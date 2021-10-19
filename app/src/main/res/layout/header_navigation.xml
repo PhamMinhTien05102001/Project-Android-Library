@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:orientation="vertical"
+    android:background="@color/Blue"
+    android:padding="20dp">
+    
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@mipmap/ic_launcher">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/name_admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phạm Minh Tiến"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white">
+    </TextView>
+
+    <TextView
+        android:id="@+id/email_admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ttieen135790@gmail.com"
+        android:textSize="16dp"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/white">
+    </TextView>
+
+</LinearLayout>

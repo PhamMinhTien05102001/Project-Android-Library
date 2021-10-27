@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_selected"
+        android:hint="Choice Category"
+        android:textStyle="italic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/img_drop_down"
+        android:padding="10dp"
+        android:textSize="16dp"
+        >
+    </TextView>
+
+    <ImageView
+        android:id="@+id/img_drop_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_arrow_drop_down_24"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true">
+    </ImageView>
+
+</RelativeLayout>

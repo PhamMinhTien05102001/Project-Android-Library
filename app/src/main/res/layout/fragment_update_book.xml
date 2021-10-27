@@ -3,13 +3,48 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.HomeFragment"
-    android:orientation="vertical"
-    android:background="@android:color/holo_blue_light">
+    android:orientation="vertical">
 
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/update_book" />
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
 
+        <EditText
+            android:id="@+id/et_update_search"
+            android:hint="Search BookID, Name,... For Update Book"
+            android:textStyle="italic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="16dp"
+            android:background="@drawable/background_search"
+            android:textCursorDrawable="@color/Blue"
+            >
+        </EditText>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_baseline_search_24"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true">
+        </ImageView>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rev_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/btn_updatekkk"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="UPDATE">
+    </Button>
 </LinearLayout>

@@ -1,4 +1,4 @@
-package com.project.library;
+package com.project.library.view;
 
 import android.view.View;
 

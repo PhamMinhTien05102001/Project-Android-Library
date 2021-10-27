@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".MainActivity"
+    tools:context=".controller.MainActivity"
     tools:openDrawer="start">
 
     <LinearLayout
@@ -27,7 +27,6 @@
 
             </androidx.appcompat.widget.Toolbar>
         </com.google.android.material.appbar.AppBarLayout>
-
 
         <FrameLayout
             android:id="@+id/content_fragment"

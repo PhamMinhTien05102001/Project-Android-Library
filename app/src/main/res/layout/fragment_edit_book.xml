@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    >
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -9,36 +11,26 @@
 
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
-            android:layout_height="350dp">
-
+            android:padding="10dp"
+            android:layout_height="500dp">
             <ImageView
-                android:id="@+id/iv_show"
-                android:layout_width="wrap_content"
-                android:layout_height="300dp">
-
+                android:id="@+id/iv_edit_avatar_book"
+                android:layout_width="match_parent"
+                android:layout_height="485dp"
+                android:src="@drawable/slide_1">
             </ImageView>
-
-            <TextView
-                android:id="@+id/tv_in_img"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Image book is here"
-                android:textSize="18dp">
-
-            </TextView>
 
         </com.google.android.material.card.MaterialCardView>
 
         <Button
-            android:id="@+id/btn_choice_img"
+            android:id="@+id/btn_change_img"
             android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:textSize="18dp"
             android:backgroundTint="@color/Blue"
-            android:text="Choice Image">
+            android:text="Change Image">
 
         </Button>
 
@@ -58,8 +50,8 @@
                 android:text="BookID :">
             </TextView>
 
-            <EditText
-                android:id="@+id/et_post_bookId"
+            <TextView
+                android:id="@+id/tv_edit_bookId"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -68,7 +60,7 @@
                 android:textCursorDrawable="@color/Blue"
                 android:backgroundTint="@color/Blue"
                 >
-            </EditText>
+            </TextView>
 
             <TextView
                 android:layout_width="10dp"
@@ -92,7 +84,7 @@
             </TextView>
 
             <EditText
-                android:id="@+id/et_post_available"
+                android:id="@+id/et_edit_available"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -121,7 +113,7 @@
             </TextView>
 
             <EditText
-                android:id="@+id/et_post_name"
+                android:id="@+id/et_edit_name"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -150,7 +142,7 @@
             </TextView>
 
             <EditText
-                android:id="@+id/et_post_author"
+                android:id="@+id/et_edit_author"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -179,7 +171,7 @@
             </TextView>
 
             <EditText
-                android:id="@+id/et_post_page"
+                android:id="@+id/et_edit_page"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.8"
@@ -217,7 +209,7 @@
                 </TextView>
 
                 <RatingBar
-                    android:id="@+id/rb_post_rating"
+                    android:id="@+id/rb_edit_rating"
                     style="?android:attr/ratingBarStyleSmall"
                     android:isIndicator="false"
                     android:layout_width="wrap_content"
@@ -294,11 +286,10 @@
                         android:layout_margin="5dp"
                         android:background="@android:color/transparent"
                         >
-
                     </Spinner>
 
                     <EditText
-                        android:id="@+id/et_post_category"
+                        android:id="@+id/et_edit_category"
                         android:layout_marginLeft="15dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -329,7 +320,7 @@
             </TextView>
 
             <EditText
-                android:id="@+id/et_post_description"
+                android:id="@+id/et_edit_description"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -342,12 +333,12 @@
         </LinearLayout>
 
         <Button
-            android:id="@+id/btn_cal_API"
+            android:id="@+id/btn_edit_API"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_gravity="center"
-            android:text="Create New Book"
+            android:text="Confirm Edit"
             android:backgroundTint="@color/Blue">
 
         </Button>

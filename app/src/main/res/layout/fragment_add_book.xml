@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="350dp">
+
+            <ImageView
+                android:id="@+id/iv_show"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/tv_in_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Image book is here"
+                android:textSize="18dp">
+
+            </TextView>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <Button
+            android:id="@+id/btn_choice_img"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="18dp"
+            android:backgroundTint="@color/Blue"
+            android:text="Choice Image">
+
+        </Button>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:text="BookID :">
+            </TextView>
+
+            <EditText
+                android:id="@+id/et_post_bookId"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:textStyle="italic"
+                android:textCursorDrawable="@color/Blue"
+                android:backgroundTint="@color/Blue"
+                >
+            </EditText>
+
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:gravity="center|end"
+                android:textColor="@color/Blue"
+                android:text="|">
+            </TextView>
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:gravity="center|end"
+                android:text="Available :">
+            </TextView>
+
+            <EditText
+                android:id="@+id/et_post_available"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:textStyle="italic"
+                android:textCursorDrawable="@color/Blue"
+                android:backgroundTint="@color/Blue"
+                >
+            </EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:text="Name :">
+            </TextView>
+
+            <EditText
+                android:id="@+id/et_post_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:textStyle="italic"
+                android:textCursorDrawable="@color/Blue"
+                android:backgroundTint="@color/Blue"
+                >
+            </EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:text="Author :">
+            </TextView>
+
+            <EditText
+                android:id="@+id/et_post_author"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:textStyle="italic"
+                android:textCursorDrawable="@color/Blue"
+                android:backgroundTint="@color/Blue"
+                >
+            </EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:text="Pages :">
+            </TextView>
+
+            <EditText
+                android:id="@+id/et_post_page"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:textSize="16dp"
+                android:textStyle="italic"
+                android:textCursorDrawable="@color/Blue"
+                android:backgroundTint="@color/Blue"
+                >
+            </EditText>
+
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="|"
+                android:textColor="@color/Blue">
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:text="Rating :">
+                </TextView>
+
+                <RatingBar
+                    android:id="@+id/rb_post_rating"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:isIndicator="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:stepSize="0.5"
+                    android:layout_gravity="center|left">
+                </RatingBar>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/border_rectangle"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text="Category :">
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/rg_choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rdo_default"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:buttonTint="@color/Blue"
+                        android:checked="true"
+                        android:text="Default">
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/rdo_another"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:buttonTint="@color/Blue"
+                        android:text="Another">
+                    </RadioButton>
+
+                </RadioGroup>
+
+                <LinearLayout
+                    android:id="@+id/sinner_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <Spinner
+                        android:id="@+id/spinner_category"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@android:color/transparent"
+                        >
+
+                    </Spinner>
+
+                    <EditText
+                        android:id="@+id/et_post_category"
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Another Category"
+                        android:textSize="16dp"
+                        android:textStyle="italic"
+                        android:textCursorDrawable="@color/Blue"
+                        android:backgroundTint="@color/white"
+                        >
+                    </EditText>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:text="Description :">
+            </TextView>
+
+            <EditText
+                android:id="@+id/et_post_description"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:textStyle="italic"
+                android:textCursorDrawable="@color/Blue"
+                android:backgroundTint="@color/Blue"
+                >
+            </EditText>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_cal_API"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:text="Create New Book"
+            android:backgroundTint="@color/Blue">
+
+        </Button>
+    </LinearLayout>
+
+</ScrollView>
+

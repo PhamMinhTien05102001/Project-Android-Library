@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_fragment">Hello fragment</string>
+    <string name="delete_book">DELETE BOOK</string>
+    <string name="update_book">UPDATE BOOK</string>
+    <string name="add_book">ADD BOOK</string>
+
+    <string name="nav_home">HOME</string>
+    <string name="nav_add">ADD NEW BOOK</string>
+    <string name="nav_update">EDIT BOOK</string>
+    <string name="nav_delete">DELETE BOOK</string>
+
+    <string name="nav_open_drawer">Open navigation drawer</string>
+    <string name="nav_close_drawer">Close navigation drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
